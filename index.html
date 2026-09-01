@@ -103,8 +103,8 @@ nav{
 .breadcrumb a:hover{opacity:1;color:var(--red)}
 .breadcrumb [aria-current="page"]{opacity:1;font-weight:600}
 /* HERO */
-.hero{display:grid;grid-template-columns:1.08fr .92fr;border-bottom:1px solid var(--line);background:var(--paper)}
-.hero-left{padding:28px 32px 20px;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
+.hero{display:grid;grid-template-columns:1.08fr .92fr;border-bottom:1px solid var(--line);background:var(--paper);align-items:stretch}
+.hero-left{padding:24px 32px 18px;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:flex-start}
 .eyebrow{display:flex;gap:10px;flex-wrap:wrap;font-family:"Fragment Mono",monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
 .eyebrow span{padding:6px 8px;border:1px solid var(--line);background:var(--paper-2)}
 .eyebrow span.red{background:var(--red);color:white;border-color:var(--red)}
@@ -116,17 +116,17 @@ nav{
 .btn-primary:hover{background:var(--ink);border-color:var(--ink)}
 .btn-ghost{padding:15px 18px;background:transparent;color:var(--ink);border:1px solid var(--line);font-family:"Fragment Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:.2s;display:inline-flex;align-items:center;gap:8px}
 .btn-ghost:hover{border-color:var(--ink);background:var(--paper-2)}
-.hero-right{position:relative;background:var(--paper-2);overflow:hidden;min-height:560px}
-.hero-right img{height:100%;min-height:560px}
+.hero-right{position:relative;background:var(--paper-2);overflow:hidden;min-height:440px}
+.hero-right img{height:100%;min-height:440px;max-height:520px}
 .hero-caption{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:end;padding:14px 16px;background:linear-gradient(to top, rgba(0,0,0,.55), transparent);color:white;font-family:"Fragment Mono",monospace;font-size:10px;letter-spacing:.08em}
 .trust-strip{border-bottom:1px solid var(--line);background:var(--paper-2);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;padding:14px 24px;font-family:"Fragment Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
 .trust-strip span{opacity:.7}
 .trust-strip strong{opacity:1}
 .trust-dot{color:var(--red)}
 /* STORY */
-.story{display:grid;grid-template-columns:.95fr 1.05fr;border-bottom:1px solid var(--line)}
-.story-left{padding:24px 32px;border-right:1px solid var(--line);background:var(--paper)}
-.story-right{padding:24px 32px;background:var(--paper-2);position:relative;overflow:hidden}
+.story{display:grid;grid-template-columns:.95fr 1.05fr;border-bottom:1px solid var(--line);align-items:start}
+.story-left{padding:20px 28px 18px;border-right:1px solid var(--line);background:var(--paper)}
+.story-right{padding:20px 28px 18px;background:var(--paper-2);position:relative;overflow:hidden}
 .story-right::after{content:"COZY";position:absolute;right:-10px;bottom:-10px;font-weight:800;font-size:160px;letter-spacing:-.08em;opacity:.06;line-height:.8;pointer-events:none}
 .section-label{font-family:"Fragment Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;display:flex;align-items:center;gap:10px;opacity:.55;margin-bottom:10px}
 .section-label:before{content:"";width:28px;height:1px;background:var(--red)}
@@ -567,7 +567,7 @@ footer{padding:18px 24px;display:flex;justify-content:space-between;align-items:
   <div class="story-right">
     <div class="section-label" style="color:var(--ink)">Workshop — Bapu Nagar, Jaipur</div>
     <h3 style="font-family:'Instrument Serif',serif;font-size:28px;line-height:.9;font-weight:400;letter-spacing:-.02em">A <em style="color:var(--red)">workshop</em>, not a warehouse.</h3>
-    <div style="margin-top:14px;display:grid;gap:12px">
+    <div style="margin-top:10px;display:grid;gap:10px">
       <div class="workshop">
         <div class="workshop-icon" aria-hidden="true">◎</div>
         <div><strong style="font-size:13px">Sanganer &amp; Bagru — Block Print</strong><br><span style="font-family:'Newsreader',serif;font-size:13px;opacity:.7;line-height:1.5">Hand-carved teak blocks, natural dyes, 4-stage wash. Each cushion takes ~6 hours from print to stitch.</span></div>
@@ -581,9 +581,9 @@ footer{padding:18px 24px;display:flex;justify-content:space-between;align-items:
         <div><strong style="font-size:13px">Barmer — Rattan &amp; Neem</strong><br><span style="font-family:'Newsreader',serif;font-size:13px;opacity:.7;line-height:1.5">Split rattan woven over neem or bamboo frames, hand-knotted cotton for macramé. Built to last a decade.</span></div>
       </div>
     </div>
-    <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800&q=80&auto=format&fit=crop" alt="Artisan hands block-printing indigo cushions on a wooden table in Jaipur workshop" loading="lazy" width="800" height="600" style="margin-top:18px;border:1px solid var(--line);aspect-ratio:1.4/1">
-    <div style="margin-top:12px;font-family:'Fragment Mono',monospace;font-size:10px;letter-spacing:.08em;opacity:.6;display:flex;justify-content:space-between"><span>Fig. 02 — Bapu Nagar workshop, Jaipur</span><span>02 / 08</span></div>
-    <div style="margin-top:18px;border-left:2px solid var(--red);padding:12px 16px;background:var(--paper);font-family:'Newsreader',serif;font-size:14px;line-height:1.6;opacity:.85">
+    <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800&q=80&auto=format&fit=crop" alt="Artisan hands block-printing indigo cushions on a wooden table in Jaipur workshop" loading="lazy" width="800" height="600" style="margin-top:14px;border:1px solid var(--line);aspect-ratio:1.6/1;max-height:300px">
+    <div style="margin-top:10px;font-family:'Fragment Mono',monospace;font-size:10px;letter-spacing:.08em;opacity:.6;display:flex;justify-content:space-between"><span>Fig. 02 — Bapu Nagar workshop, Jaipur</span><span>02 / 08</span></div>
+    <div style="margin-top:14px;border-left:2px solid var(--red);padding:12px 16px;background:var(--paper);font-family:'Newsreader',serif;font-size:14px;line-height:1.6;opacity:.85">
       “We keep the team small on purpose. Every order is packed by us, with a handwritten note. That’s our moat — big brands can’t fake warmth.”
       <br><span style="font-family:'Fragment Mono',monospace;font-size:10px;letter-spacing:.08em;opacity:.6">— Priya & Aman, founders</span>
     </div>
