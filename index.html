@@ -104,14 +104,14 @@ nav{
 .breadcrumb [aria-current="page"]{opacity:1;font-weight:600}
 /* HERO */
 .hero{display:grid;grid-template-columns:1.08fr .92fr;border-bottom:1px solid var(--line);background:var(--paper)}
-.hero-left{padding:44px 32px 28px;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
-.eyebrow{display:flex;gap:10px;flex-wrap:wrap;font-family:"Fragment Mono",monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
+.hero-left{padding:28px 32px 20px;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
+.eyebrow{display:flex;gap:10px;flex-wrap:wrap;font-family:"Fragment Mono",monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
 .eyebrow span{padding:6px 8px;border:1px solid var(--line);background:var(--paper-2)}
 .eyebrow span.red{background:var(--red);color:white;border-color:var(--red)}
 .hero h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;letter-spacing:-.04em;line-height:.92;font-size:clamp(38px,6vw,68px)}
 .hero h1 i{font-family:"Instrument Serif",serif;font-weight:400;font-style:italic;color:var(--red)}
-.hero-sub{margin-top:16px;font-family:"Newsreader",serif;font-size:18px;line-height:1.55;opacity:.82;max-width:48ch}
-.hero-ctas{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.hero-sub{margin-top:10px;font-family:"Newsreader",serif;font-size:18px;line-height:1.55;opacity:.82;max-width:48ch}
+.hero-ctas{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 .btn-primary{padding:16px 20px;background:var(--red);color:white;border:1px solid var(--red);font-family:"Fragment Mono",monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;cursor:pointer;transition:.2s;display:inline-flex;justify-content:center;align-items:center;gap:10px}
 .btn-primary:hover{background:var(--ink);border-color:var(--ink)}
 .btn-ghost{padding:15px 18px;background:transparent;color:var(--ink);border:1px solid var(--line);font-family:"Fragment Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:.2s;display:inline-flex;align-items:center;gap:8px}
@@ -125,16 +125,16 @@ nav{
 .trust-dot{color:var(--red)}
 /* STORY */
 .story{display:grid;grid-template-columns:.95fr 1.05fr;border-bottom:1px solid var(--line)}
-.story-left{padding:36px 32px;border-right:1px solid var(--line);background:var(--paper)}
-.story-right{padding:36px 32px;background:var(--paper-2);position:relative;overflow:hidden}
+.story-left{padding:24px 32px;border-right:1px solid var(--line);background:var(--paper)}
+.story-right{padding:24px 32px;background:var(--paper-2);position:relative;overflow:hidden}
 .story-right::after{content:"COZY";position:absolute;right:-10px;bottom:-10px;font-weight:800;font-size:160px;letter-spacing:-.08em;opacity:.06;line-height:.8;pointer-events:none}
 .section-label{font-family:"Fragment Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;display:flex;align-items:center;gap:10px;opacity:.55;margin-bottom:10px}
 .section-label:before{content:"";width:28px;height:1px;background:var(--red)}
 .story h2, .shop-head h2, .featured h2, .testi-head h2, .insta-head h2, .faq-head h2{font-weight:800;letter-spacing:-.04em;line-height:.9;font-size:32px}
 .story h2 i, .shop-head h2 i, .featured h2 i, .testi-head h2 i, .insta-head h2 i, .faq-head h2 i{font-family:"Instrument Serif",serif;font-weight:400;font-style:italic}
-.story-text{margin-top:14px;font-family:"Newsreader",serif;font-size:16px;line-height:1.65;opacity:.84}
-.story-text p+p{margin-top:12px}
-.founders{margin-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.story-text{margin-top:10px;font-family:"Newsreader",serif;font-size:16px;line-height:1.65;opacity:.84}
+.story-text p+p{margin-top:10px}
+.founders{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .founder{border:1px solid var(--line);background:var(--paper);padding:14px;display:flex;gap:12px;align-items:center}
 .founder img{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);flex-shrink:0}
 .founder strong{font-size:14px;letter-spacing:-.02em}
@@ -226,9 +226,10 @@ nav{
 .faq-head{padding:32px 24px 18px;display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
 .faq-list{max-width:900px}
 .faq-item{border-bottom:1px solid var(--line);background:var(--paper)}
-.faq-q{width:100%;display:grid;grid-template-columns:1fr 36px;gap:16px;align-items:center;padding:18px 24px;cursor:pointer;background:transparent;border:none;text-align:left;color:var(--ink);font-weight:700;letter-spacing:-.02em;font-size:16px;font-family:"Bricolage Grotesque",sans-serif}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 24px;cursor:pointer;background:transparent;border:none;text-align:left;color:var(--ink);font-weight:700;letter-spacing:-.02em;font-size:16px;font-family:"Bricolage Grotesque",sans-serif}
+.faq-q span:first-child{flex:1}
 .faq-q i{font-family:"Instrument Serif",serif;font-weight:400;font-style:italic}
-.faq-toggle{width:32px;height:32px;border:1px solid var(--line);display:grid;place-items:center;transition:.3s;background:var(--paper-2)}
+.faq-toggle{width:32px;height:32px;border:1px solid var(--line);display:grid;place-items:center;transition:.3s;background:var(--paper-2);flex-shrink:0;margin-left:auto}
 .faq-item.open .faq-toggle{background:var(--red);border-color:var(--red);color:white;transform:rotate(45deg)}
 .faq-a{display:none;padding:0 24px 18px 24px;font-family:"Newsreader",serif;font-size:14px;line-height:1.65;opacity:.78;max-width:70ch}
 .faq-item.open .faq-a{display:block}
@@ -420,7 +421,7 @@ footer{padding:18px 24px;display:flex;justify-content:space-between;align-items:
     {
       "@type": "Product",
       "name": "Brass & Linen Dome Table Lamp – 14 inch",
-      "image": "https://images.unsplash.com/photo-1524484485823-a92ffc6c2d82?w=600&q=80&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=600&q=80&auto=format&fit=crop",
       "description": "Antique brass base with handloom linen dome shade, 14 inch high. Warm ambient light.",
       "brand": {"@type": "Brand", "name": "Cozy Nook"},
       "sku": "CN-LM-BRS-06",
@@ -684,7 +685,7 @@ footer{padding:18px 24px;display:flex;justify-content:space-between;align-items:
     <!-- Product 6 -->
     <article class="product-card" data-category="Lamps" data-id="p6">
       <div class="product-media">
-        <img src="https://images.unsplash.com/photo-1524484485823-a92ffc6c2d82?w=600&q=80&auto=format&fit=crop" alt="Brass and Linen Dome Table Lamp 14 inch — antique brass base handloom linen shade 14 inch high" loading="lazy" width="600" height="600">
+        <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=600&q=80&auto=format&fit=crop" alt="Brass and Linen Dome Table Lamp 14 inch — antique brass base handloom linen shade 14 inch high" loading="lazy" width="600" height="600">
         <span class="stock-badge">In stock • Best seller</span>
       </div>
       <div class="cat">Lamps</div>
@@ -808,7 +809,7 @@ footer{padding:18px 24px;display:flex;justify-content:space-between;align-items:
       <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&q=80&auto=format&fit=crop" alt="Instagram tile 4 — close up of macrame knots and tassels on driftwood" loading="lazy" width="600" height="600">
     </a>
     <a class="insta-tile" href="https://www.instagram.com/cozynookhomedecor" target="_blank" rel="noopener" aria-label="Instagram photo 5 — brass lamp on side table">
-      <img src="https://images.unsplash.com/photo-1524484485823-a92ffc6c2d82?w=600&q=80&auto=format&fit=crop" alt="Instagram tile 5 — brass table lamp on linen side table with books" loading="lazy" width="600" height="600">
+      <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=600&q=80&auto=format&fit=crop" alt="Instagram tile 5 — brass table lamp on linen side table with books" loading="lazy" width="600" height="600">
     </a>
     <a class="insta-tile" href="https://www.instagram.com/cozynookhomedecor" target="_blank" rel="noopener" aria-label="Instagram photo 6 — workshop hands">
       <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800&q=80&auto=format&fit=crop" alt="Instagram tile 6 — artisan hands glazing terracotta planter in Jaipur" loading="lazy" width="600" height="600">
@@ -1004,7 +1005,7 @@ const PRODUCTS = {
   p3: {id:'p3', name:'Terracotta Planter – Set of 2', price:1199, cat:'Planters', img:'https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=600&q=80&auto=format&fit=crop', desc:'Wheel-thrown • matte glaze • drainage hole • 6" dia • set of two'},
   p4: {id:'p4', name:'Glazed Hanging Planter Trio', price:1899, cat:'Planters', img:'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80&auto=format&fit=crop', desc:'Stoneware • 3 mini planters • jute hangers • 4" dia • sage/ivory/sand'},
   p5: {id:'p5', name:'Rattan Pendant Lamp – Natural', price:2499, cat:'Lamps', img:'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&q=80&auto=format&fit=crop', desc:'Natural rattan • bamboo tripod • warm LED included • 18"'},
-  p6: {id:'p6', name:'Brass & Linen Dome Table Lamp – 14"', price:3499, cat:'Lamps', img:'https://images.unsplash.com/photo-1524484485823-a92ffc6c2d82?w=600&q=80&auto=format&fit=crop', desc:'Antique brass base • handloom linen shade • 14" high • ambient glow'},
+  p6: {id:'p6', name:'Brass & Linen Dome Table Lamp – 14"', price:3499, cat:'Lamps', img:'https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=600&q=80&auto=format&fit=crop', desc:'Antique brass base • handloom linen shade • 14" high • ambient glow'},
   p7: {id:'p7', name:'Macramé Wall Hanging – Driftwood Ivory', price:2199, cat:'Wall Art', img:'https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&q=80&auto=format&fit=crop', desc:'Cotton macramé • neem driftwood • 24×36" • tassels • ivory'},
   p8: {id:'p8', name:'Jute Wall Art – Geometric Weave', price:899, cat:'Wall Art', img:'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80&auto=format&fit=crop', desc:'Handloom jute & wool • ivory geometric • 20×20" • Jaipur artisans'}
 };
