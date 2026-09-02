@@ -1,4 +1,4 @@
-# Cozy Nook Home Decor — Fake D2C Assignment
+# Cozy Nook Home Decor — D2C Assignment
 Handmade cushions, planters & lamps storefront demo (Jaipur, Bapu Nagar).
 Tech: vanilla HTML/CSS/JS — single `index.html`, no frameworks, no build.
 Features: Shop filters, cart (`localStorage cozy_cart`), auth `Hi, Name` (`cozy_user`), checkout modal, theme toggle, mobile nav.
